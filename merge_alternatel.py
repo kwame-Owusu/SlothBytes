@@ -1,8 +1,6 @@
 """
-Given a string s, reverse only all the vowels in the string and return it.
-The vowels are 'a', 'e', 'i', 'o', and 'u', and they can appear in both lower and upper cases, more than once.
-
-
+You are given two strings word1 and word2. Merge the strings by adding letters in alternating order, starting with word1. 
+If a string is longer than the other, append the additional letters onto the end of the merged string, Return the merged string.
 Example 1:
 
 Input: word1 = "abc", word2 = "pqr"
