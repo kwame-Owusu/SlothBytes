@@ -1,3 +1,11 @@
+"""
+Note: 
+Binary search is powerful but can only be conducted on sorted arrays which give O(log n).
+otherwise linear search is better which give us O(n).
+
+"""
+
+
 def binary_search(arr: list[int], target: int) -> int:
     l, r = 0, len(arr) - 1
 
