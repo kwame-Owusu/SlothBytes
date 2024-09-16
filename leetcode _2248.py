@@ -8,18 +8,18 @@ Explanation:
 The only integers present in each of nums[0] = [3,1,2,4,5], nums[1] = [1,2,3,4], and nums[2] = [3,4,5,6] are 3 and 4, so we return [3,4].
 """
 
-hashmap = {}
-result = []
+def intersection(self, nums: List[List[int]]) -> List[int]:
+  hashmap = {}
+  result = []
 
-for i in range(len(nums)):
-  for j in nums[i]:
-    if j in hashmap:
-      hashmap[j] += 1
-    else:
-      hashmap[j] = 1
+  for i in range(len(nums)):
+    for j in nums[i]:
+        if j in hashmap:
+          hashmap[j] += 1
+        else:
+          hashmap[j] = 1
 
-for key, value in hashmap.items():
-  if value == len(nums):
-    result.append(key)
-
-return sorted(result)
+  for key, value in hashmap.items():
+    if value == len(nums):
+      result.append(key)
+ return sorted(result))
