@@ -67,7 +67,7 @@ func TestVerticalText(t *testing.T) {
 		t.Run(tt.name, func(t *testing.T) {
 			result := verticalText(tt.input)
 			if !reflect.DeepEqual(result, tt.expected) {
-				t.Errorf("sevenBoom(%v) = %v, want %v", tt.input, result, tt.expected)
+				t.Errorf("vertical Text(%v) = %v, want %v", tt.input, result, tt.expected)
 			}
 		})
 	}
